@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'SF-Pro';
+    src: url(../fonts/SF-Pro.ttf);
+}
+
+p, h1, button, input {
+    font-family: 'SF-Pro';
+    color: #C6C6C6;
+}
+
+body {
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    padding: 28px 38px 25px;
+    background-color: #FFFFFF05;
+    border-radius: 83px;
+    backdrop-filter: blur(36px);
+    transition: 0.5s min-height;
+    min-height: 400px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.subs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.blockt {
+    width: 370px;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.num {
+    flex: 2;
+    background-color: #696969;
+    color: #fff;
+    font-size: 16px;
+    padding: 23px 19px;
+    border: none;
+    outline: none;
+    border-radius: 40px 0 0 40px;
+}
+
+.num::placeholder {
+    color: #CFCFCF;
+}
+
+.start {
+    flex: 1;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0 40px 40px 0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.start:hover {
+    background-color: #111;
+}
+
+.input {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.error-message {
+    position: absolute;
+    display: none;
+    color: #FF3030;
+    font-size: 12px;
+    left: 15px;
+}
+
+.nums {
+    width: 800px;
+    padding-bottom: 30px;
+    word-break: break-all;
+    transition: 0.5s;
+}
